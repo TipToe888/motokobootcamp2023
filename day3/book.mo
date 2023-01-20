@@ -11,6 +11,13 @@ module Book {
         pages : Nat;
     };
 
-    public type create_book = (title : Text, pages : Nat) -> async (BookType);
+    public func create_book(title : Text, pages : Nat) : async (BookType) {
+        let book : BookType = {
+            title = title;
+            pages = pages;
+        };
+
+        return book;
+    };
 
 };
