@@ -6,14 +6,17 @@ import Array "mo:base/Array";
 import Int "mo:base/Int";
 import Nat "mo:base/Nat";
 import Book "book";
+import List "mo:base/List";
 
 actor {
 
     public type Book = Book.BookType;
 
     let exampleBook : Book = {
-        title = "My Witty Book Title";
-        pages = 420;
+        title = "My Title";
+        pages = 888;
     };
+
+    let books = List.nil<Book>();
 
 };
